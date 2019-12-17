@@ -1,0 +1,1 @@
+const asd="atef gad",zxc=123,asd2="ahmed gad";
