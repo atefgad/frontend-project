@@ -1,5 +1,32 @@
 .header{
     .toggle-sidebar{
         cursor: pointer;
+        position: relative;
+        left: -22px;
+        top: 10px;
+        background-color: #f3f3f9;
+        border-radius: 50%;
+        padding: 5px;
+        width: 43px;
+        display: inline-block;
+        float: left;
+        font-size: 30px;
+        font-weight: bold;
+        height: 43px;
+        text-align: center;
+        line-height: 34px;
+        transition: color .4s linear;
+        &:hover{color: #666}
+        
+    }
+    
+}
+.no-sidebar{
+    .header{
+        .toggle-sidebar{
+            &:before{
+                content: "\f105";
+            }
+        }
     }
 }
