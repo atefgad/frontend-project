@@ -1,2 +1,86 @@
 .header
-    i.fa.fa-angle-left.toggle-sidebar
+    .header-content.clearfix
+        .header-control
+            .toggle-sidebar
+                .hamburger-icon
+                    span
+                    span
+                    span 
+            a.fullScreen(href="#!")
+                i.fa.fa-arrows-alt
+        //Header Right
+        .header-right
+            ul.clearfix
+                // Notifictions
+                li.icons
+                    a(href="javascript:void(0)", data-toggle="dropdown", aria-expanded="true")
+                        i.fa.fa-bell-o.fa-lg
+                        span.badge.badge-pill.gradient-2 2
+                    //dropdwon menu
+                    .drop-down.animated.fadeIn.dropdown-menu
+                        .dropdown-content-heading.d-flex.justify-content-between
+                            span.caption You have 3 Notifications
+                            
+                            a.d-inline-block(href="javascript:void(0)")
+                                span.badge.badge-pill.gradient-2 3
+                            
+                        //dropdown-content-body
+                        .dropdown-content-body
+                            ul
+                                // Notifictions Item List #1
+                                li
+                                    a(href="#!")
+                                        span.mr-2.noti-avatar-icon
+                                            i.fa.fa-envelope-open-o
+                                        .notification-content
+                                            h6.noti-title You got a email notification
+                                            span.noti-text One hour ago
+
+                                // Notifictions Item List #2
+                                li
+                                    a(href="#!")
+                                        span.mr-2.noti-avatar-icon
+                                            i.fa.fa-calendar-o
+                                        .notification-content
+                                            h6.noti-title Event Ended Successfully
+                                            span.noti-text 5 days ago
+
+                                // Notifictions Item List #3
+                                li
+                                    a(href="#!")
+                                        span.mr-2.noti-avatar-icon
+                                            i.fa.fa-calendar-o
+                                        .notification-content
+                                            h6.noti-title Event Started
+                                            span.noti-text April 12, 2019 06:50
+                                            
+                        .dropdown-content-footing.text-center
+                            a(href="#!")
+                                span.caption view all notifictions
+
+                // Messages
+                li.icons
+                    a(href="javascript:void(0)", data-toggle="dropdown", aria-expanded="true")
+                        i.fa.fa-envelope-o.fa-lg
+                        span.badge.badge-pill.gradient-1 3
+                    //dropdwon menu
+                    .drop-down.animated.fadeIn.dropdown-menu
+                        .dropdown-content-heading.d-flex.justify-content-between
+                            span.caption 3 New Messages
+                            
+                            a.d-inline-block(href="javascript:void(0)")
+                                span.badge.badge-pill.gradient-1 3
+
+                        //dropdown-content-body
+                        .dropdown-content-body
+                            ul
+                                li
+                                    a(href="#!")
+                                        span.badge.badge-avatar.gradient-1 3
+                                        img.float-left.mr-3.avatar-img(src="images/user.png",alt="Adam Smith")
+                                        .notification-content
+                                            h6.noti-title Adam Smith
+                                            span.date 30 minutes ago
+                                            span.noti-text Hi John, Just wanted to let you ...
+
+                        

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
@@ -14,8 +15,14 @@
         <div class="site-logo"><a href="#!">Logo</a></div>
         <ul class="sidebar-list list-unstyled">
           <li><a href="#!">Home</a></li>
-          <li> <a href="#!">
-               Forms<i class="fa fa-angle-right toggle-submenu"></i>
+          <li> <a class="toggle-submenu" href="#!">Forms<i class="fa fa-angle-right"></i>
+              <ul class="child-links list-unstyled">
+                <li><a href="#!">input</a></li>
+                <li><a href="#!">textarea</a></li>
+                <li><a href="#!">checkbox</a></li>
+                <li><a href="#!">radio</a></li>
+              </ul></a></li>
+          <li> <a class="toggle-submenu" href="#!">Forms<i class="fa fa-angle-right"></i>
               <ul class="child-links list-unstyled">
                 <li><a href="#!">input</a></li>
                 <li><a href="#!">textarea</a></li>
@@ -25,8 +32,70 @@
         </ul>
       </div>
       <div class="content-area">
-        <div class="header"><i class="fa fa-angle-left toggle-sidebar"></i></div>
-        <h1>Home Page</h1>
+        <div class="header">
+          <div class="header-content clearfix">
+            <div class="header-control">
+              <div class="toggle-sidebar">
+                <div class="hamburger-icon"><span></span><span></span><span> </span></div>
+              </div><a class="fullScreen" href="#!"><i class="fa fa-arrows-alt"></i></a>
+            </div>
+            <!--Header Right-->
+            <div class="header-right">
+              <ul class="clearfix">
+                <!-- Notifictions-->
+                <li class="icons"><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-bell-o fa-lg"></i><span class="badge badge-pill gradient-2">2</span></a>
+                  <!--dropdwon menu-->
+                  <div class="drop-down animated fadeIn dropdown-menu">
+                    <div class="dropdown-content-heading d-flex justify-content-between"><span class="caption">You have 3 Notifications</span><a class="d-inline-block" href="javascript:void(0)"><span class="badge badge-pill gradient-2">3</span></a></div>
+                    <!--dropdown-content-body-->
+                    <div class="dropdown-content-body">
+                      <ul>
+                        <!-- Notifictions Item List #1-->
+                        <li><a href="#!"><span class="mr-2 noti-avatar-icon"><i class="fa fa-envelope-open-o"></i></span>
+                            <div class="notification-content">
+                              <h6 class="noti-title">You got a email notification</h6><span class="noti-text">One hour ago</span>
+                            </div></a></li>
+                        <!-- Notifictions Item List #2-->
+                        <li><a href="#!"><span class="mr-2 noti-avatar-icon"><i class="fa fa-calendar-o"></i></span>
+                            <div class="notification-content">
+                              <h6 class="noti-title">Event Ended Successfully</h6><span class="noti-text">5 days ago</span>
+                            </div></a></li>
+                        <!-- Notifictions Item List #3-->
+                        <li><a href="#!"><span class="mr-2 noti-avatar-icon"><i class="fa fa-calendar-o"></i></span>
+                            <div class="notification-content">
+                              <h6 class="noti-title">Event Started</h6><span class="noti-text">April 12, 2019 06:50</span>
+                            </div></a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-content-footing text-center"><a href="#!"><span class="caption">view all notifictions</span></a></div>
+                  </div>
+                </li>
+                <!-- Messages-->
+                <li class="icons"><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-envelope-o fa-lg"></i><span class="badge badge-pill gradient-1">3</span></a>
+                  <!--dropdwon menu-->
+                  <div class="drop-down animated fadeIn dropdown-menu">
+                    <div class="dropdown-content-heading d-flex justify-content-between"><span class="caption">3 New Messages</span><a class="d-inline-block" href="javascript:void(0)"><span class="badge badge-pill gradient-1">3</span></a></div>
+                    <!--dropdown-content-body-->
+                    <div class="dropdown-content-body">
+                      <ul>
+                        <li><a href="#!"><span class="badge badge-avatar gradient-1">3</span><img class="float-left mr-3 avatar-img" src="images/user.png" alt="Adam Smith"/>
+                            <div class="notification-content">
+                              <h6 class="noti-title">Adam Smith</h6><span class="date">30 minutes ago</span><span class="noti-text">Hi John, Just wanted to let you ...</span>
+                            </div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="page-head">
+            <h1 class="page-title">Home Page</h1>
+            <p class="page-description lead">this is description of Home Page</p>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
