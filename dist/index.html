@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
@@ -15,14 +16,14 @@
         <div class="site-logo"><a href="#!">Logo</a></div>
         <ul class="sidebar-list list-unstyled">
           <li><a href="#!">Home</a></li>
-          <li> <a class="toggle-submenu" href="#!">Forms<i class="fa fa-angle-right"></i>
+          <li> <a class="toggle-submenu" href="#!">Forms<i class="side-menu-arrow fa fa-angle-right"></i>
               <ul class="child-links list-unstyled">
                 <li><a href="#!">input</a></li>
                 <li><a href="#!">textarea</a></li>
                 <li><a href="#!">checkbox</a></li>
                 <li><a href="#!">radio</a></li>
               </ul></a></li>
-          <li> <a class="toggle-submenu" href="#!">Forms<i class="fa fa-angle-right"></i>
+          <li> <a class="toggle-submenu" href="#!">Forms<i class="side-menu-arrow fa fa-angle-right"> </i>
               <ul class="child-links list-unstyled">
                 <li><a href="#!">input</a></li>
                 <li><a href="#!">textarea</a></li>
@@ -32,12 +33,17 @@
         </ul>
       </div>
       <div class="content-area">
+        <div class="search-bar">
+          <div class="search-icon"><i class="fa fa-search"></i></div>
+          <input type="text" placeholder="search typing..."/>
+          <div class="search-close"><i class="fa fa-times"></i></div>
+        </div>
         <div class="header">
           <div class="header-content clearfix">
             <div class="header-control">
               <div class="toggle-sidebar">
                 <div class="hamburger-icon"><span></span><span></span><span> </span></div>
-              </div><a class="fullScreen" href="#!"><i class="fa fa-arrows-alt"></i></a>
+              </div><a class="fullScreen" href="#!"><i class="fa fa-arrows-alt"></i></a><a class="search-btn" href="#!"><i class="fa fa-search fa-lg"></i></a>
             </div>
             <!--Header Right-->
             <div class="header-right">
@@ -82,6 +88,24 @@
                             <div class="notification-content">
                               <h6 class="noti-title">Adam Smith</h6><span class="date">30 minutes ago</span><span class="noti-text">Hi John, Just wanted to let you ...</span>
                             </div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- profile Icon-->
+                <li class="icons"><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true">
+                    <div class="profile-avatar"><img class="rounded-circle" src="images/u2.jpg"/><span class="user-activity fa fa-circle"></span></div></a>
+                  <!--dropdwon menu-->
+                  <div class="drop-down animated fadeIn dropdown-menu profile-dropdwon">
+                    <!--dropdown-content-body-->
+                    <div class="dropdown-content-body">
+                      <ul>
+                        <!-- Item List #1  -->
+                        <li><a href="#!"><i class="fa fa-user"></i>Profile<span class="badge badge-pill gradient-1">3</span></a></li>
+                        <!-- Item List #2-->
+                        <li><a href="#!"><i class="fa fa-cog"></i>Settings</a></li>
+                        <!-- Item List #3-->
+                        <li><a href="#!"><i class="fa fa-power-off"></i>Logout</a></li>
                       </ul>
                     </div>
                   </div>

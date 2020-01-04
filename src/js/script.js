@@ -11,8 +11,12 @@ $(function(){
 
     // sidebar submenu toggle
     $(".toggle-submenu").on("click", function(){
-        $(this).find(".fa-angle-right").toggleClass("down");
+        $(this).find(".side-menu-arrow").toggleClass("down");
         $(this).next(".child-links").slideToggle();
+    })
+
+    $(".search-btn, .search-close").on("click", function(){
+      $(".search-bar").toggleClass("open");
     })
 
     // hamburger-icon

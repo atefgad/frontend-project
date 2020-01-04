@@ -1,3 +1,10 @@
+.search-bar
+    .search-icon
+        i.fa.fa-search
+    input(type="text",placeholder="search typing...")
+    .search-close
+        i.fa.fa-times
+    
 .header
     .header-content.clearfix
         .header-control
@@ -8,6 +15,9 @@
                     span 
             a.fullScreen(href="#!")
                 i.fa.fa-arrows-alt
+
+            a.search-btn(href="#!")
+                i.fa.fa-search.fa-lg
         //Header Right
         .header-right
             ul.clearfix
@@ -83,4 +93,31 @@
                                             span.date 30 minutes ago
                                             span.noti-text Hi John, Just wanted to let you ...
 
-                        
+                // profile Icon
+                li.icons
+                    a(href="javascript:void(0)", data-toggle="dropdown", aria-expanded="true")
+                        .profile-avatar
+                            img.rounded-circle(src="images/u2.jpg")
+                            span.user-activity.fa.fa-circle
+
+                    //dropdwon menu
+                    .drop-down.animated.fadeIn.dropdown-menu.profile-dropdwon
+                        //dropdown-content-body
+                        .dropdown-content-body
+                            ul
+                                // Item List #1  
+                                li
+                                    a(href="#!")
+                                        i.fa.fa-user
+                                        |Profile
+                                        span.badge.badge-pill.gradient-1 3
+                                // Item List #2
+                                li
+                                    a(href="#!")
+                                        i.fa.fa-cog
+                                        |Settings
+                                // Item List #3
+                                li
+                                    a(href="#!")
+                                        i.fa.fa-power-off
+                                        |Logout
