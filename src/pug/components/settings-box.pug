@@ -1,10 +1,17 @@
-.settings-box
-    span.fa.fa-gear.fa-lg.toggle-settings settings tools
+.settings-box.hide-settings
+    h3.settings-caption Settings Box
+    .toggle-settings
+        i.fa.fa-gear.fa-lg
     .settings-content
+        .option-box.color-options
+            -var themes = ["green-theme", "blue-theme", "red-theme", "orange-theme", "purple-theme"]
+            h4 Color option
+            ul.list-unstyled
+                each theme in themes
+                    li(data-theme=theme)
+
         .option-box
             h4 Font option
-        .option-box
-            h4 Color option
         .option-box
             h4 Sidebar option
 

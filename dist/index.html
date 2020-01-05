@@ -12,6 +12,28 @@
   </head>
   <body>
     <div class="page">
+      <div class="settings-box hide-settings">
+        <h3 class="settings-caption">Settings Box</h3>
+        <div class="toggle-settings"><i class="fa fa-gear fa-lg"></i></div>
+        <div class="settings-content">
+          <div class="option-box color-options">
+            <h4>Color option</h4>
+            <ul class="list-unstyled">
+              <li data-theme="green-theme"></li>
+              <li data-theme="blue-theme"></li>
+              <li data-theme="red-theme"></li>
+              <li data-theme="orange-theme"></li>
+              <li data-theme="purple-theme"></li>
+            </ul>
+          </div>
+          <div class="option-box">
+            <h4>Font option</h4>
+          </div>
+          <div class="option-box">
+            <h4>Sidebar option</h4>
+          </div>
+        </div>
+      </div>
       <div class="sidebar">
         <div class="site-logo"><a href="#!">Logo</a></div>
         <ul class="sidebar-list list-unstyled">
@@ -48,6 +70,21 @@
             <!--Header Right-->
             <div class="header-right">
               <ul class="clearfix">
+                <!-- lang-->
+                <li class="icons lang"><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true"><span class="mr-1">English</span><i class="fa fa-angle-down fa-lg"></i></a>
+                  <!--dropdwon menu-->
+                  <div class="animated fadeIn dropdown-menu">                        
+                    <!--dropdown-content-body-->
+                    <div class="dropdown-content-body">
+                      <ul>
+                        <!-- Item List #1-->
+                        <li><a href="#!"><span class="mr-2">English</span></a></li>
+                        <!-- Item List #2-->
+                        <li><a href="#!"><span class="mr-2">Arabic</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
                 <!-- Notifictions-->
                 <li class="icons"><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-bell-o fa-lg"></i><span class="badge badge-pill gradient-2">2</span></a>
                   <!--dropdwon menu-->
@@ -116,7 +153,7 @@
         </div>
         <div class="container-fluid">
           <div class="page-head">
-            <h1 class="page-title">Home Page</h1>
+            <h2 class="page-title">Home Page</h2>
             <p class="page-description lead">this is description of Home Page</p>
           </div>
         </div>

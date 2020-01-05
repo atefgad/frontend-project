@@ -2,3 +2,38 @@
 .gradient-1{background-image: linear-gradient(230deg, #759bff, #843cf6);}
 .gradient-2{background-image: linear-gradient(230deg, #fc5286, #fbaaa2);}
 
+
+$themes: (
+    blue-theme:(
+        color: #7571f9
+    ),
+    green-theme:(
+        color: #27ae60
+    ),
+    red-theme:(
+        color: #c0392b
+    ),
+    orange-theme:(
+        color: #d35400
+    ),
+    purple-theme:(
+        color: #8e44ad
+    )
+);
+
+@each $theme, $map in $themes {
+    .#{$theme} {
+        .page-head .page-title {
+            color: map-get($map, color);
+        }
+        .sidebar .site-logo{
+            background-color: map-get($map, color);
+        }
+        a:hover {
+            color: map-get($map, color);
+        }
+        .hamburger-icon:hover span{
+            background-color: map-get($map, color);
+        }
+    }
+}

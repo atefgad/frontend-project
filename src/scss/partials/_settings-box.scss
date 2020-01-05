@@ -1,8 +1,77 @@
 .settings-box{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    padding: 5rem 1.3rem;
+    background-color: #fff;
+    z-index: 999;
+    transition: .3s;
+    &.hide-settings{right: -250px;}
+    .settings-caption{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-bottom: .6rem;
+        border-bottom: 2px solid #eee;
+        text-align: center;
+        border-radius: 50%;
+    }
     .toggle-settings{
-
+        position: absolute;
+        left: -33px;
+        top: calc(50% - 70px);
+        padding: 1rem;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .4s;
+        i{
+            top: 5px;
+            left: -5px;
+            position: relative;
+        }
+        &:after{
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            transform: rotate(45deg);
+            background-color: #fff;
+            border-radius: 10px;
+        }
+    
+    }
+    .color-options{
+        ul{
+            $colors: #2980b9, #27ae60, #c0392b, #d35400, #8e44ad;
+            @for $i from 1 through length($colors){
+                li:nth-child(#{$i}) {
+                    background-color: nth($colors, $i);
+                }
+            }
+            li{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                opacity: .7;
+                cursor: pointer;
+                display: inline-block;
+                transition: .3s;
+                &.active{
+                    opacity: 1;
+                    box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+                }
+            }
+        }
     }
     .settings-content{
-        .option-box{}
+        .option-box{
+            text-align: center;
+        }
     }
 }

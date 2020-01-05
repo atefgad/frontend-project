@@ -34,6 +34,25 @@ $(function(){
         }
     })
 
+    // toggle-Settings Box
+    $(".toggle-settings").on("click", function (){
+      $(".settings-box").toggleClass("hide-settings");
+      $(this).find("i").toggleClass("fa-spin")
+    })
+
+    // Change Theme Color
+    var themeColors = [];
+    $(".color-options li").each(function(){
+      themeColors.push($(this).data("theme"));
+    })
+    $(".color-options li").on("click", function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      $("body")
+        .removeClass(themeColors.join(" "))
+        .addClass($(this).data("theme"));
+    })
+
+
 })
 
 

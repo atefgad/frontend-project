@@ -1,21 +1,33 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    .page{
-        min-height: 100vh;
-        background-color: #F3F3F9;
-        .content-area{
-            width: calc(100% - 250px);
-            min-height: 100%;
-            transition: .3s;
-            will-change: width;
-            float: right;
-            &.no-sidebar{
-                width: calc(100% - 80px);
-            }
-        }
-    }
     a{
         transition: .3s;
-        &:hover{text-decoration: none;}
+        color: #abafb3;
+        &:hover{
+            text-decoration: none;
+            color: #7571f9;
+        }
+    }
+}
+
+.page{
+    min-height: 100vh;
+    background-color: #F3F3F9;
+    .content-area{
+        width: calc(100% - 250px);
+        min-height: 100%;
+        transition: .3s;
+        will-change: width;
+        float: right;
+        &.no-sidebar{
+            width: calc(100% - 80px);
+        }
+    }
+}
+.page-head{
+    margin-top: 1rem;
+    .page-title{
+        font-weight: bold;
+        color: #7571f9;
     }
 }
