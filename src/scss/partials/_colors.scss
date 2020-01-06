@@ -1,39 +1,47 @@
 
 .gradient-1{background-image: linear-gradient(230deg, #759bff, #843cf6);}
 .gradient-2{background-image: linear-gradient(230deg, #fc5286, #fbaaa2);}
-
+$blue: #7571f9;
+$green:#27ae60;
+$red: #c0392b;
+$orange: #d35400;
+$purple: #8e44ad;
 
 $themes: (
     blue-theme:(
-        color: #7571f9
+        color: $blue
     ),
     green-theme:(
-        color: #27ae60
+        color: $green
     ),
     red-theme:(
-        color: #c0392b
+        color: $red
     ),
     orange-theme:(
-        color: #d35400
+        color: $orange
     ),
     purple-theme:(
-        color: #8e44ad
+        color: $purple
     )
 );
 
 @each $theme, $map in $themes {
     .#{$theme} {
+        $color: map-get($map, color);
         .page-head .page-title {
-            color: map-get($map, color);
+            color: $color;
         }
         .sidebar .site-logo{
-            background-color: map-get($map, color);
+            background-color: $color;
         }
         a:hover {
-            color: map-get($map, color);
+            color: $color;
         }
         .hamburger-icon:hover span{
-            background-color: map-get($map, color);
+            background-color: $color;
+        }
+        .settings-box .settings-caption{
+            color: $color;    
         }
     }
 }

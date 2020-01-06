@@ -1,11 +1,23 @@
+/* Main Fonts */
+$Roboto: 'Roboto', sans-serif;
+$Open-Sans: 'Open Sans', sans-serif;
+$Lato: 'Lato', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+/*******************************/
 body{
     font-family: 'Open Sans', sans-serif;
+    &.Open-Sans {font-family: $Open-Sans}
+    &.Roboto    {font-family: $Roboto}
+    &.Lato      {font-family: $Lato}
+    &.Oswald    {font-family: $Oswald}
+    &.ORaleway  {font-family: $Raleway}
     a{
         transition: .3s;
         color: #abafb3;
         &:hover{
             text-decoration: none;
-            color: #7571f9;
+            color: $blue;
         }
     }
 }
@@ -28,6 +40,6 @@ body{
     margin-top: 1rem;
     .page-title{
         font-weight: bold;
-        color: #7571f9;
+        color: $blue;
     }
 }

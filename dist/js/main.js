@@ -53,6 +53,18 @@ $(function(){
         .addClass($(this).data("theme"));
     })
 
+    // Change Theme Font
+    var themeFonts = [];
+    $(".font-options select option").each(function(){
+      themeFonts.push($(this).val());
+    })
+
+    $(".font-options select").on("change", function(){
+      $("body")
+      .removeClass(themeFonts.join(" "))
+      .addClass($(this).find("option:selected").val());
+    })
+
 
 })
 

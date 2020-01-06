@@ -4,14 +4,19 @@
         i.fa.fa-gear.fa-lg
     .settings-content
         .option-box.color-options
-            -var themes = ["green-theme", "blue-theme", "red-theme", "orange-theme", "purple-theme"]
+            -var themes = ["blue-theme", "green-theme", "red-theme", "orange-theme", "purple-theme"]
             h4 Color option
             ul.list-unstyled
                 each theme in themes
                     li(data-theme=theme)
 
-        .option-box
+        .option-box.font-options
             h4 Font option
+            -var fonts = ["Open-Sans", "Roboto", "Lato", "Oswald", "Raleway"]
+            select.form-control
+                each font in fonts
+                    option(value=font)=font + " font"
+            
         .option-box
             h4 Sidebar option
 

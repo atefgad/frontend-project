@@ -16,6 +16,7 @@
         border-bottom: 2px solid #eee;
         text-align: center;
         border-radius: 50%;
+        color: $blue;
     }
     .toggle-settings{
         position: absolute;
@@ -46,19 +47,29 @@
         }
     
     }
+    .settings-content{
+        .option-box{
+            text-align: center;
+            h4{
+                font-size: 1rem;
+                font-weight: 600;
+                color: #abafb3;
+            }
+        }
+    }
     .color-options{
         ul{
-            $colors: #2980b9, #27ae60, #c0392b, #d35400, #8e44ad;
+            $colors: $blue, $green, $red, $orange, $purple;
             @for $i from 1 through length($colors){
                 li:nth-child(#{$i}) {
                     background-color: nth($colors, $i);
                 }
             }
             li{
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
                 border-radius: 50%;
-                opacity: .7;
+                opacity: .6;
                 cursor: pointer;
                 display: inline-block;
                 transition: .3s;
@@ -69,9 +80,17 @@
             }
         }
     }
-    .settings-content{
-        .option-box{
-            text-align: center;
+    .font-options{
+        select{
+            text-transform: capitalize;
+            $fonts: $Open-Sans, $Roboto, $Lato, $Oswald, $Raleway;
+            @for $i from 1 through length($colors){
+                option[value=#{$i}] {
+                    font-family: nth($colors, $i);
+                }
+            }
+            option{background-color: #f20;}
+            
         }
     }
 }

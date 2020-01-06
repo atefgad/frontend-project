@@ -15,7 +15,7 @@
         font-weight: bold;
         font-size: 30px;
         padding: 20px 10px;
-        background-color: #7571f9;
+        background-color: $blue;
         a{
             color: #fff;
             &:hover{
@@ -64,6 +64,13 @@
                 left: 10px;
                 transform: translateY(-50%);
                 top: 50%;
+                transition: .3s;
+            }
+            &.active{
+                &:before{
+                    background-color: $blue;
+                    border: 3px solid $blue;
+                }
             }
         }
         
