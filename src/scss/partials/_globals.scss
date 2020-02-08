@@ -5,6 +5,17 @@ $Lato: 'Lato', sans-serif;
 $Oswald: 'Oswald', sans-serif;
 $Raleway: 'Raleway', sans-serif;
 /*******************************/
+
+// font-weight
+@for $i from 3 through 9 {
+    .f-w-#{$i}00 {font-weight: #{$i}000 !important;}
+}
+// font-size
+@for $i from 1 through 10 {
+    .f-1#{$i} {font-size: 1#{$i}px !important;}
+}
+
+
 body{
     font-family: 'Open Sans', sans-serif;
     &.Open-Sans {font-family: $Open-Sans}
@@ -26,13 +37,14 @@ body{
     min-height: 100vh;
     background-color: #F3F3F9;
     .content-area{
-        width: calc(100% - 250px);
+        
+        width: calc(100% - 80px);
         min-height: 100%;
         transition: .3s;
         will-change: width;
         float: right;
         &.no-sidebar{
-            width: calc(100% - 80px);
+            width: calc(100% - 250px);
         }
     }
 }

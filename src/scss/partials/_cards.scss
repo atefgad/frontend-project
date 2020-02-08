@@ -1,0 +1,48 @@
+.card{
+    box-shadow: 6px 11px 41px -28px #a99de7;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 0.625rem;
+}
+
+.prod-p-card {
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    transition: .4s;
+    &:after,&:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 30%;
+        background-color: #a2a2a221;
+        transition: all .3s ease-in-out;
+    }
+    &:hover{
+        box-shadow: 6px 7px 26px 8px #8e8d92;
+    }
+    &:before{
+        height: 100px;
+        border-radius: 20% 80% 0% 0%;
+        bottom: -12px;
+        left: 0;
+    }
+    &:after{
+        height: 100px;
+        border-radius: 80% 0% 0% 20%;
+        bottom: -25px;
+    }
+    i {
+        color: #ddd;
+        font-size: 30px;
+        transition: all .3s ease-in-out;
+        box-shadow: 0 8px 15px rgba(62,57,107,.2);
+    }
+    &:hover:after,
+    &:hover:before{
+        height: 400px;
+        width: 150%;
+        border-radius: 100%;
+
+    }
+}

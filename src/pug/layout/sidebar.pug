@@ -1,12 +1,15 @@
-.sidebar
+.sidebar.no-sidebar
     .site-logo
         a(href="#!") Logo
-    ul.sidebar-list.list-unstyled
+    ul.sidebar-list.list-unstyled.mt-5
         li
-            a(href="/", class= pageTitle === "Home Page" ? "active" : "") Home
+            a(href="/", class= pageTitle === "Home Page" ? "active" : "") 
+                span.link-caption Home
+                span.side-menu-icon.fa.fa-home.animated.bounce
         li 
             a(href="#!").toggle-submenu
-                |Forms
+                span.link-caption Forms
+                span.side-menu-icon.fa.fa-cogs.animated.bounce
                 i.side-menu-arrow.fa.fa-angle-right
                 ul.child-links.list-unstyled
                     li
@@ -20,7 +23,8 @@
 
         li 
             a(href="charts.html", class= pageTitle === "Charts" ? "active" : "")
-                |Charts
+                span.link-caption Charts
+                span.side-menu-icon.fa.fa-shopping-cart.animated.bounce
                 
             
             

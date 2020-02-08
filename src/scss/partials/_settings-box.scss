@@ -1,3 +1,5 @@
+@import 'partials/colors';
+
 .settings-box{
     position: fixed;
     right: 0;
@@ -80,17 +82,17 @@
             }
         }
     }
-    .font-options{
-        select{
-            text-transform: capitalize;
-            $fonts: $Open-Sans, $Roboto, $Lato, $Oswald, $Raleway;
-            @for $i from 1 through length($colors){
-                option[value=#{$i}] {
-                    font-family: nth($colors, $i);
-                }
-            }
-            option{background-color: #f20;}
+    // .font-options{
+    //     select{
+    //         text-transform: capitalize;
+    //         $fonts: $Open-Sans, $Roboto, $Lato, $Oswald, $Raleway;
+    //         @for $i from 1 through length($fonts){
+    //             option[value=#{$i}] {
+    //                 font-family: nth($fonts, $i);
+    //             }
+    //         }
+    //         option{background-color: #f20;}
             
-        }
-    }
+    //     }
+    // }
 }

@@ -7,6 +7,12 @@ $red: #c0392b;
 $orange: #d35400;
 $purple: #8e44ad;
 
+.blue{background-color: $blue;}
+.green{background-color: $green;}
+.red{background-color: $red;}
+.orange{background-color: $orange;}
+.purple{background-color: $purple;}
+
 $themes: (
     blue-theme:(
         color: $blue
@@ -28,20 +34,11 @@ $themes: (
 @each $theme, $map in $themes {
     .#{$theme} {
         $color: map-get($map, color);
-        .page-head .page-title {
-            color: $color;
-        }
-        .sidebar .site-logo{
-            background-color: $color;
-        }
-        a:hover {
-            color: $color;
-        }
-        .hamburger-icon:hover span{
-            background-color: $color;
-        }
-        .settings-box .settings-caption{
-            color: $color;    
-        }
+        .page-head .page-title {color: $color;}
+        .sidebar .site-logo{background-color: $color;}
+        a:hover {color: $color;}
+        .hamburger-icon:hover span{background-color: $color;}
+        .sidebar .side-menu-icon:hover{color: $color;}
+        .settings-box .settings-caption{color: $color;}
     }
 }
