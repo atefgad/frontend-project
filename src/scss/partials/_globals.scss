@@ -1,14 +1,12 @@
 /* Main Fonts */
-$Roboto: 'Roboto', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
 $Open-Sans: 'Open Sans', sans-serif;
-$Lato: 'Lato', sans-serif;
-$Oswald: 'Oswald', sans-serif;
-$Raleway: 'Raleway', sans-serif;
+$Indie-Flower: 'Indie Flower', cursive;
 /*******************************/
 
 // font-weight
 @for $i from 3 through 9 {
-    .f-w-#{$i}00 {font-weight: #{$i}000 !important;}
+    .f-w-#{$i}00 {font-weight: #{$i}00 !important;}
 }
 // font-size
 @for $i from 1 through 10 {
@@ -19,10 +17,8 @@ $Raleway: 'Raleway', sans-serif;
 body{
     font-family: 'Open Sans', sans-serif;
     &.Open-Sans {font-family: $Open-Sans}
-    &.Roboto    {font-family: $Roboto}
-    &.Lato      {font-family: $Lato}
-    &.Oswald    {font-family: $Oswald}
-    &.ORaleway  {font-family: $Raleway}
+    &.Montserrat        {font-family: $Montserrat}
+    &.Indie-Flower      {font-family: $Indie-Flower}
     a{
         transition: .3s;
         color: #abafb3;

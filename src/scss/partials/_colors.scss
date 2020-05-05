@@ -1,17 +1,25 @@
-
-.gradient-1{background-image: linear-gradient(230deg, #759bff, #843cf6);}
-.gradient-2{background-image: linear-gradient(230deg, #fc5286, #fbaaa2);}
 $blue: #7571f9;
 $green:#27ae60;
 $red: #c0392b;
 $orange: #d35400;
 $purple: #8e44ad;
 
+.gradient-1{background-image: linear-gradient(230deg, #759bff, #843cf6);}
+.gradient-2{background-image: linear-gradient(230deg, #fc5286, #fbaaa2);}
+
+
 .blue{background-color: $blue;}
 .green{background-color: $green;}
 .red{background-color: $red;}
 .orange{background-color: $orange;}
 .purple{background-color: $purple;}
+
+.text-blue{color: $blue;}
+.text-green{color: $green;}
+.text-red{color: $red;}
+.text-orange{color: $orange;}
+.text-purple{color: $purple;}
+
 
 $themes: (
     blue-theme:(

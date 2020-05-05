@@ -7,7 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto&amp;display=swap"/>
+    <!--link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat:400,700|Open+Sans:400,700&display=swap")-->
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
@@ -30,10 +30,8 @@
             <h4>Font option</h4>
             <select class="form-control">
               <option value="Open-Sans">Open-Sans font</option>
-              <option value="Roboto">Roboto font</option>
-              <option value="Lato">Lato font</option>
-              <option value="Oswald">Oswald font</option>
-              <option value="Raleway">Raleway font</option>
+              <option value="Montserrat">Montserrat font</option>
+              <option value="Indie-Flower">Indie-Flower font</option>
             </select>
           </div>
           <div class="option-box">
@@ -53,6 +51,7 @@
                 <li><a href="#!">radio</a></li>
               </ul></a></li>
           <li> <a href="charts.html"><span class="link-caption">Charts</span><span class="side-menu-icon fa fa-shopping-cart animated bounce"></span></a></li>
+          <li> <a href="registration.html"><span class="link-caption">registration</span><span class="side-menu-icon fa fa-users animated bounce"></span></a></li>
         </ul>
       </div>
       <div class="content-area">
@@ -72,7 +71,8 @@
             <div class="header-right">
               <ul class="clearfix">
                 <!-- lang-->
-                <li class="icons lang"><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true"><span class="mr-1">English</span><i class="fa fa-angle-down fa-lg"></i></a>
+                <li class="icons lang mr-4">
+                  <div class="i fa fa-globe fa-lg mr-2"></div><a href="javascript:void(0)" data-toggle="dropdown" aria-expanded="true"><span class="mr-1">English</span><i class="fa fa-angle-down fa-lg"></i></a>
                   <!--dropdwon menu-->
                   <div class="animated fadeIn dropdown-menu">                        
                     <!--dropdown-content-body-->
@@ -159,50 +159,80 @@
           </div>
           <section class="main-status">
             <div class="row">
-              <div class="col-md-4">
-                <div class="card prod-p-card green">
+              <div class="col-lg-3 col-md-6">
+                <div class="card prod-p-card">
                   <div class="card-body">
                     <div class="row align-items-center mb-3">
                       <div class="col">
-                        <h6 class="text-white">Total Profit</h6>
-                        <h3 class="mb-4 f-w-700 text-white">$1,783 </h3>
+                        <h6>Total Profit</h6>
+                        <h3 class="mb-4">$1,783 </h3>
                       </div>
-                      <div class="col-auto"><i class="fa fa-money"></i></div>
+                      <div class="col-auto"><i class="card-icon fa fa-money text-green"></i></div>
                     </div>
-                    <p class="mb-0 text-white">From Previous Month<span class="label label-danger m-r-10">+11%</span></p>
+                    <p class="mb-0">From Previous Month<span class="label label-danger mr-1">+11% </span><i class="fa fa-arrow-up"></i></p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card prod-p-card blue">
+              <div class="col-lg-3 col-md-6">
+                <div class="card prod-p-card">
                   <div class="card-body">
                     <div class="row align-items-center mb-3">
                       <div class="col">
-                        <h6 class="text-white">Products Sold</h6>
-                        <h3 class="mb-4 f-w-700 text-white">4565 </h3>
+                        <h6>Products Sold</h6>
+                        <h3 class="mb-4">4565 </h3>
                       </div>
-                      <div class="col-auto"><i class="fa fa-shopping-cart"></i></div>
+                      <div class="col-auto"><i class="card-icon fa fa-shopping-cart text-blue"></i></div>
                     </div>
-                    <p class="mb-0 text-white">From Previous Month<span class="label label-danger mr-5">+11%</span></p>
+                    <p class="mb-0">From Previous Month<span class="label label-danger mr-1">-9% </span><i class="fa fa-arrow-down"></i></p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card prod-p-card purple">
+              <div class="col-lg-3 col-md-6">
+                <div class="card prod-p-card">
                   <div class="card-body">
                     <div class="row align-items-center mb-3">
                       <div class="col">
-                        <h6 class="text-white">New Customers</h6>
-                        <h3 class="mb-b4 f-w-700 text-white">4565 </h3>
+                        <h6>New Customers</h6>
+                        <h3 class="mb-b4">4565 </h3>
                       </div>
-                      <div class="col-auto"><i class="fa fa-users"></i></div>
+                      <div class="col-auto"><i class="card-icon fa fa-users text-orange"></i></div>
                     </div>
-                    <p class="mb-0 text-white">From Previous Month<span class="label label-danger m-r-10">+11%</span></p>
+                    <p class="mb-0">From Previous Month<span class="label label-danger mr-1">+20%</span><i class="fa fa-arrow-up"></i></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card prod-p-card">
+                  <div class="card-body">
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6>New Customers</h6>
+                        <h3 class="mb-b4">4565 </h3>
+                      </div>
+                      <div class="col-auto"><i class="card-icon fa fa-users text-purple"></i></div>
+                    </div>
+                    <p class="mb-0">From Previous Month<span class="label label-danger mr-1">+30%</span><i class="fa fa-arrow-down"></i></p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-head d-flex justify-content-between">
+                  <div class="div">
+                    <h3 class="card-title">card title</h3>
+                  </div>
+                  <div class="div"><span class="fa fa-angle-down fa-lg"></span></div>
+                </div>
+                <hr class="hr"/>
+                <div class="card-body">
+                  <h2>card body here</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

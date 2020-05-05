@@ -3,6 +3,18 @@
     margin-bottom: 30px;
     border: none;
     border-radius: 0.625rem;
+    .card-head{
+        min-height: 1px;
+        padding: 1.15rem;
+        .card-title{
+            font-weight: normal;
+        }
+    }
+    
+
+    .hr{
+        margin-top: -5px;
+    }
 }
 
 .prod-p-card {
@@ -15,7 +27,8 @@
         position: absolute;
         right: 0;
         width: 30%;
-        background-color: #a2a2a221;
+        background-color: rgba(162, 162, 162, 0.09);
+        opacity: .8;
         transition: all .3s ease-in-out;
     }
     &:hover{
@@ -32,11 +45,11 @@
         border-radius: 80% 0% 0% 20%;
         bottom: -25px;
     }
-    i {
-        color: #ddd;
+    .card-icon{
+        // color: #ddd;
         font-size: 30px;
+        font-size: 50px;
         transition: all .3s ease-in-out;
-        box-shadow: 0 8px 15px rgba(62,57,107,.2);
     }
     &:hover:after,
     &:hover:before{
@@ -44,5 +57,13 @@
         width: 150%;
         border-radius: 100%;
 
+    }
+
+    .card-body{
+        h6{
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        h3{font-weight: 600 !important;}
     }
 }
